@@ -9,10 +9,10 @@
  // Math.floor(Math.random() * (6 - 1 + 1)) + 1;
 
 const randomNumber = (lower, upper) => {
-  // Check if the input arguments are numbers
-  // if ( isNaN(lower) || isNan(upper) ) {
-  //   throw Error('Both arguments must be numbers.')
-  // }
+  Check if the input arguments are numbers
+  if ( isNaN(lower) || isNan(upper) ) {
+    throw Error('Both arguments must be numbers.')
+  }
   const random = Math.floor(Math.random() * (upper - lower + 1)) + lower;
   return random;
 };
